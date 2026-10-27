@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://medoz.app/tv" version="0.1.0" viewmodes="maximized">
+  <name>Medoz TV</name><content src="index.html"/><access origin="*" subdomains="true"/>
+  <tizen:application id="MEDOZTV001.MedozTV" package="MEDOZTV001" required_version="5.5"/>
+  <tizen:profile name="tv-samsung"/><tizen:setting screen-orientation="landscape" context-menu="disable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+</widget>
