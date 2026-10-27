@@ -1,30 +1,53 @@
 # Medoz TV
 
-**A free smart TV companion project for Samsung Tizen TVs.**
+مشروع مستقل لتطبيق تلفزيون ذكي باسم **Medoz**، يستهدف شاشات Samsung Tizen، مع تطبيق موبايل للتحكم والتثبيت عند دعم المنصة.
 
-## Project Vision
-Medoz TV aims to provide a free, Arabic-friendly smart TV experience with an original interface and useful everyday features.
+## حالة المشروع
+مرحلة تحليل المتطلبات والتصميم — **لم تبدأ البرمجة بعد**.
 
-## Planned Features
-- Arabic interface with RTL support.
-- Customizable themes and backgrounds.
-- Samsung Tizen TV compatibility testing.
-- Android companion app and TV remote features.
-- Quran, azkar, radio, and audio playback from local files and compatible online streams.
-- Prayer times and adhan.
-- Clock, weather, and favorites.
-- Family profiles and optional PIN protection.
-- IPTV support for compatible, legally available sources.
-- Casting and DLNA support where compatible.
+## مبادئ المشروع
+- مجاني بالكامل: دون اشتراكات أو مشتريات داخل التطبيق.
+- تصميم واجهة جديد مستقل.
+- دعم العربية واتجاه RTL.
+- العمل دون إنترنت في الوظائف التي يمكن تشغيلها محليًا.
+- اختبار التوافق الفعلي مع إصدارات Samsung Tizen قبل إعلان الدعم.
 
-## Principles
-- Free to use, with no paid themes or subscriptions.
-- Original design and implementation.
-- Offline support wherever technically possible.
-- Respect for privacy and safe handling of user data.
+## المكونات المخططة
+- `apps/mobile/`: تطبيق الموبايل للاتصال والتحكم والتثبيت المدعوم.
+- `apps/tizen-tv/`: تطبيق التلفزيون المتوافق مع Tizen.
+- `docs/`: وثائق المتطلبات والتصميم والاختبارات.
+- `assets/`: الأيقونات والخلفيات والأصول المرخصة.
 
-## Development Status
-Requirements and design are being reviewed. Implementation will begin after the project requirements and design are approved.
+## الوظائف المخططة
+- واجهة رئيسية وثيمات قابلة للتخصيص.
+- اكتشاف التلفزيون والاتصال به.
+- ريموت موبايل ضمن صلاحيات المنصة.
+- اختصارات التطبيقات.
+- مواقيت الصلاة والأذان.
+- راديو وقرآن ورقية شرعية من ملفات محلية وروابط بث.
+- ساعة وطقس.
+- IPTV لمصادر قانونية متوافقة.
+- بروفايلات عائلية وحماية داخل التطبيق.
+- إرسال وسائط للأجهزة المتوافقة.
 
-## Important
-Compatibility and installation methods must be tested on the target Samsung TV model and its Tizen version.
+## ملاحظات
+- اسم المستودع المقترح: `Medoz-TV`.
+- لا يحتوي هذا المستودع التمهيدي على كود Morph TV أو ملفات APK الخاصة به.
+- لا تُعتبر أي ميزة متوافقة مع جميع الشاشات قبل اختبارها.
+
+## Documentation map
+- `docs/DESIGN-PROPOSAL.md` — visual direction.
+- `docs/FINAL-DESIGN-SPEC.md` — dashboard and identity specification.
+- `docs/REMOTE-AND-NAVIGATION.md` — TV remote behavior.
+- `docs/MOBILE-COMPANION.md` — mobile companion scope and limitations.
+- `docs/PRAYER-LOCATION-WEATHER.md` — time, prayer, location, and weather rules.
+- `docs/AUDIO-AND-PLAYBACK.md` — audio and radio playback.
+- `docs/HOME-SCREEN-AND-THEMES.md` — dashboard and theme requirements.
+- `docs/IPTV-CASTING-AND-APP-SHORTCUTS.md` — optional integrations.
+- `docs/OFFLINE-PRIVACY-SECURITY.md` — offline and privacy rules.
+- `docs/COMPATIBILITY-AND-TEST-PLAN.md` — device validation plan.
+- `docs/IMPLEMENTATION-ROADMAP.md` — phased delivery plan.
+- `docs/OPEN-DECISIONS.md` — unresolved decisions.
+- `docs/RELEASE-CHECKLIST.md` — release gate.
+
+**Important:** This repository is a requirements and planning package. It does not yet contain a working Tizen or Android implementation.
